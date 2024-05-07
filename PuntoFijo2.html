@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Método del Punto Fijo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="img/calculador.png">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="menu-fijo">
+        <div class="contenedor">
+            <h1 class="no-margin"><a href="index.html" style="color: white;">Métodos<span>Numéricos</span></h1></a>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="navegacion">
+                <a href="PuntoFijo2.html"><i class="fas fa-calculator"></i> Punto Fijo</a>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+            </nav>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div id="contenedor">
+       <center> <h2><strong> Punto Fijo</strong></h2></center>
+        <label for="funcion">Introduce tu función g(x):</label><br>
+        <input type="text" id="funcion" name="funcion"><br>
+        <label for="x0">Introduce el valor inicial x0:</label><br>
+        <input type="text" id="x0" name="x0"><br>
+        <label for="tolerancia">Introduce la tolerancia:</label><br>
+        <input type="text" id="tolerancia" name="tolerancia"><br>
+        <div class="button"><button onclick="puntoFijo()">Calcular</button></div>
+        <p id="resultado"></p>
+        <div style="max-width: 100%; overflow-x: auto;">
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+  <script src="js/app2.js"></script>
+</body>
+</html>

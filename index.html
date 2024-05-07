@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Método de Punto Fijo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="icon" type="image/png" href="img/calculador.png">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+<div class="menu-fijo">
+    <div class="contenedor">
+        <h1 class="no-margin" style="color: white;">Métodos<span>Numéricos</span></h1>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navegacion">
+            <a href="PuntoFijo2.html"><i class="fas fa-calculator"></i> Punto Fijo</a>
+            <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+        </nav>
+    </div><!--contenedor-->
+</div>
+
+<div class="contenido-imagenes">
+    <img src="img/pf1.jpg" alt="Imagen blog">
+    <img src="img/pf2.jpg" alt="Imagen blog1">
+    <img src="img/pf3.jpg" alt="Imagen blog2">
+    <img src="img/pf4.jpg" alt="Imagen blog3">
+    <img src="img/pf5.jpg" alt="Imagen blog4">
+</div>
+
+<script>
+          if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado con éxito:', registration);
+          })
+          .catch(function(error) {
+            console.log('Error al registrar el Service Worker:', error);
+          });
+      }
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('.navegacion').classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
